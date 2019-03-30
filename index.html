@@ -19,15 +19,25 @@
 
 <div id="container"></div>
     <div id="startCover">PRESS ANY KEY TO START</div>
-    <div id="endCoverWin">YOU DID IT<br>PRESS ANY KEY TO PLAY AGAIN</div>
-    <div id="endCoverLose">YOU LOSE<br>PRESS ANY KEY TO PLAY AGAIN</div>
+    <div id="endCoverWin">YOU DID IT<br>PRESS ANY KEY TO <br> PLAY AGAIN</div>
+    <div id="endCoverLose">YOU LOSE<br>PRESS ANY KEY TO <br> PLAY AGAIN</div>
     <!--<div id="endCover"></div> -->
-    <h1></h1>
-    <h2></h2>
+    
 
         <h5 class="rowContent word" id="hangmanWord"></h5>
         <h4 class="rowContent guess" id="guessRemain"></h4>
         <h4 class="rowContent char" id="charUsed"></h4>
+
+        <p id="directionsText">
+            Using the keyboard, your goal is to guess the 
+            wild-west themed word equal to the number of 
+            spaces provided. Should you do so, you win and may reset
+            by pressing any key on your keyboard. Should you fail to guess
+            in the 10 tries alotted, you will lose, and may restart the game
+            the same
+
+        </p>
+        <h3 id="directions" onmouseover="directionsOn()" onmouseout="directionsOff()">directions</h3>
         
     <!-- custom javascript -->
 <script src="assets/javascript/game3.js"></script>

@@ -17,6 +17,18 @@ var userGuessArr = []
 
 start()
 
+document.getElementById("directionsText").style.visibility = "hidden";
+function directionsOn() {
+    document.getElementById("directionsText").style.visibility = "visible";
+}
+
+function directionsOff() {
+    document.getElementById("directionsText").style.visibility = "hidden";
+}
+
+
+
+//game start function
 function start() {
     document.getElementById("hangmanWord").textContent = cowboyWordSpaces.join("");
     document.getElementById("endCoverWin").style.visibility = "hidden";
@@ -36,7 +48,7 @@ function start() {
     }
 }
 
-
+//word randomize function
 function wordRandom(min,max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -45,16 +57,13 @@ function wordRandom(min,max) {
 
 //word to be used each round
 function wordCreate() {
+    //picks a word randomly from array
     cowboyWord = wordBankArr[wordRandom(9,0)]
     cowboyWordSplit = cowboyWord.split("") 
         console.log(cowboyWordSplit)
     for (let i = 0; i < cowboyWord.length; i++) {
     cowboyWordSpaces[i] = "_";
 }}
-
-//--- GAME SETUP
-
-
 
 //--- PLAY
 
@@ -91,7 +100,7 @@ function gameLogic(guess){
     //if not a letter, we send a message
     } else {
         console.log("Please only type a single character A through Z")
-    }
+    }   
 }
 
 //win condition
