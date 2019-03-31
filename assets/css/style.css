@@ -3,14 +3,6 @@ body {
     background-size: 1500px;  
 }
 
-h1 {
-    font-size: 100px;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-
 #directions {
     font-size: 20px;
     color: white;
@@ -89,7 +81,6 @@ h5 {
     padding-top: 40%;
     font-size: 60px;
 }
-
 
 #endCoverWin, #endCoverLose {
     position:fixed;
