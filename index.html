@@ -17,6 +17,10 @@
 
 <body> 
 
+<audio>
+    <source src="assets/audio/camp.mp3" type="audio.mpeg">
+</audio>
+
 <div id="container"></div>
     <div id="startCover">PRESS ANY KEY TO START</div>
     <div id="endCoverWin">YOU DID IT<br>PRESS ANY KEY TO <br> PLAY AGAIN</div>
@@ -27,6 +31,7 @@
         <h5 class="rowContent word" id="hangmanWord"></h5>
         <h4 class="rowContent guess" id="guessRemain"></h4>
         <h4 class="rowContent char" id="charUsed"></h4>
+        
 
         <p id="directionsText">
             Using the keyboard, your goal is to guess the 
@@ -38,7 +43,9 @@
 
         </p>
         <h3 id="directions" onmouseover="directionsOn()" onmouseout="directionsOff()">directions</h3>
-        
+        <h3 id="music" onclick="play()">yah hear that?</h3>
+        <audio id="song" src="assets/audio/camp.mp3"></audio>
+
     <!-- custom javascript -->
 <script src="assets/javascript/game3.js"></script>
 

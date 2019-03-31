@@ -1,7 +1,7 @@
 //--- GAME START / WORD PICK
 
 //words to be picked from
-var wordBankArr = ["pistol", "horse", "lasso", "bandanna", "saloon", "sherrif", "cowboy", "spur", "boots"]
+var wordBankArr = ["pistol", "horse", "lasso", "bandanna", "saloon", "sherrif", "cowboy", "spur", "boots", "yeehaw"]
 //gamestart variable check
 var hasGameStart = false;
 //empty variable for user guess
@@ -15,7 +15,6 @@ var uniqueGuesses = []
 //recording correct guesses
 var userGuessArr = []
 
-start()
 
 document.getElementById("directionsText").style.visibility = "hidden";
 function directionsOn() {
@@ -24,9 +23,18 @@ function directionsOn() {
 
 function directionsOff() {
     document.getElementById("directionsText").style.visibility = "hidden";
+
+}
+
+songClick = document.getElementById("music")
+song = document.getElementById("song")
+
+function play() {
+    song.play();
 }
 
 
+start()
 
 //game start function
 function start() {
@@ -58,7 +66,7 @@ function wordRandom(min,max) {
 //word to be used each round
 function wordCreate() {
     //picks a word randomly from array
-    cowboyWord = wordBankArr[wordRandom(9,0)]
+    cowboyWord = wordBankArr[wordRandom(10,0)]
     cowboyWordSplit = cowboyWord.split("") 
         console.log(cowboyWordSplit)
     for (let i = 0; i < cowboyWord.length; i++) {

@@ -1,8 +1,9 @@
 body {
-    background: no-repeat fixed center url("https://paravelinc.com/img/amigo-hp-optimized.jpg");
+    background: no-repeat fixed bottom -100px right -150px url("https://paravelinc.com/img/amigo-hp-optimized.jpg");
     background-size: 1500px;
     
 }
+
 
 
 h1 {
@@ -13,15 +14,40 @@ h1 {
 }
 
 
-h3 {
+#directions {
     font-size: 20px;
     color: white;
     text-align: right;
     position: fixed;
     bottom: 40px;
     left: 40px;
+    opacity: .7;
     font-style: oblique;
+    display: inline;
+}
 
+#directionsText {
+    background-color: rgba(40, 48, 68, .95);
+    color: #ECFFF8;
+    position: fixed;
+    bottom: 70px;
+    left: 40px;
+    padding: 15px;
+    width: 300px;
+    border: #ECFFF8 2px solid;
+    text-align: center;
+    opacity: .8;
+}
+
+#music {
+    display: inline;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    opacity: .7;
+    font-style: oblique;
+    font-size: 20px;
+    color: white;
 }
     
 h4 {
@@ -40,14 +66,16 @@ h5 {
 }
 
 .rowContent {
-    top: 100px;
+    top: 100%;
     text-align: center;
     padding: 20px;
+    opacity: .8;
 }
 
 .word{
-    margin-top: 30px;
+    margin-top: 180px;
 }
+
 #startCover {
     position:fixed;
     padding:0;
@@ -56,6 +84,7 @@ h5 {
     left:0;
     width: 100%;
     height: 100%;
+    opacity: .8;
 
    
     color: white;
@@ -64,17 +93,7 @@ h5 {
     font-size: 60px;
 }
 
-#directionsText {
-    background-color: rgba(40, 48, 68, .95);
-    color: #ECFFF8;
-    position: fixed;
-    bottom: 70px;
-    left: 70px;
-    padding: 15px;
-    width: 200px;
-    border: #ECFFF8 2px solid;
-    text-align: center;
-}
+
 #endCoverWin, #endCoverLose {
     position:fixed;
     padding:0;
