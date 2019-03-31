@@ -30,6 +30,7 @@ body {
 
 #music {
     display: inline;
+    cursor: pointer;
     position: fixed;
     bottom: 25px;
     right: 40px;
@@ -38,7 +39,7 @@ body {
     font-size: 20px;
     color: white;
 }
-    
+
 h4 {
     font-size: 60px;
     color: white;
