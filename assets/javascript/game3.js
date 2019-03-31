@@ -116,7 +116,6 @@ function gameResetWin() {
     if (cowboyWordSplit.toString() == cowboyWordSpaces.toString()) {
         document.getElementById("endCoverWin").style.visibility = "visible";
         document.removeEventListener("keydown", gameLogic)
-        document.getElementById("guessRemain").textContent = "YOU WIN";
         console.log("YOU WIN"); 
         console.log("PRESS ANY KEY TO CONTINUE");
         document.addEventListener("keydown", reset)     
